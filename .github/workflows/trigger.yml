@@ -1,0 +1,10 @@
+name: Actions Workflow
+
+on: workflow_call
+
+jobs:
+  run-action-on-remote-call:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a greeting
+        run: echo "Hello from another action test"
