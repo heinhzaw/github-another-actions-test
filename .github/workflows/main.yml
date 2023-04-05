@@ -1,0 +1,10 @@
+name: Deploy
+on: workflow_dispatch
+
+jobs:
+  run:
+    name: Run this main workflow
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a greeting
+        run: echo "Hello from main workflow"
